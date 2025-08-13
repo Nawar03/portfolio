@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawar Almuohi — Portfolio</title>
+    <meta name="description" content="Portfolio of Nawar Almuohi — cybersecurity and software development projects, experience, and contact." />
+    <meta name="theme-color" content="#0a192f" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a class="nav-logo" href="#top" aria-label="Go to top">
+                <span class="logo-icon" aria-hidden="true">N</span>
+            </a>
+            <ul class="nav-menu" role="menu">
+                <li role="none"><a role="menuitem" href="#about" class="nav-link">About</a></li>
+                <li role="none"><a role="menuitem" href="#experience" class="nav-link">Experience</a></li>
+                <li role="none"><a role="menuitem" href="#skills" class="nav-link">Skills</a></li>
+                <li role="none"><a role="menuitem" href="#projects" class="nav-link">Projects</a></li>
+                <li role="none"><a role="menuitem" href="#certifications" class="nav-link">Certifications</a></li>
+                <li role="none"><a role="menuitem" href="#contact" class="nav-link">Contact</a></li>
+                <li role="none"><a role="menuitem" href="#" class="resume-btn" id="resumeBtn">Resume</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Resume Modal -->
+<div id="resumeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="resumeTitle">Resume — Nawar Almuohi</h2>
+      <button class="close" aria-label="Close resume modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <!-- Leave src empty because your JS sets it on click to 'resume.pdf' -->
+      <embed id="resumeEmbed" src="" type="application/pdf" width="100%" height="600px" aria-label="Resume PDF viewer">
+      <p class="pdf-fallback">
+        If the PDF doesn't display, you can
+        <!-- Point the fallback link to your actual file so users can still download it -->
+        <a href="Portfolio_Resume.pdf" id="resumeDownload" target="_blank" rel="noopener">download it here</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+    <!-- Hero Section -->
+    <header id="top" class="hero">
+        <div class="container">
+            <div class="contact-info" aria-label="Contact quick info">
+                <a class="email" href="mailto:almuohi.nawar@gmail.com">almuohi.nawar@gmail.com</a>
+                <span class="location">Orland Park, Illinois</span>
+            </div>
+            
+            <div class="hero-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="hero-title">Nawar Almuohi.</h1>
+                <h2 class="hero-subtitle">I build things for the digital world.</h2>
+                <p class="hero-description">
+                    I'm a computer science graduate specializing in cybersecurity and software development. 
+                    Currently focused on building secure, innovative solutions and expanding my expertise 
+                    in both software development and cybersecurity practices.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="cta-button">Check out my work</a>
+                    <a href="#" id="resumeBtnHero" class="cta-button secondary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hello! I'm Nawar, a passionate computer science professional with a strong foundation 
+                    in cybersecurity and technical writing. My journey in technology has been driven by 
+                    curiosity and a desire to create secure, efficient solutions.
+                </p>
+                <p>
+                    I've had the opportunity to work in diverse environments, from hands-on cybersecurity 
+                    roles to technical writing positions, which has given me a well-rounded perspective 
+                    on the tech industry.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+        <div class="container">
+            <h2 id="experience-title" class="section-title">Experience</h2>
+            <div class="experience-content">
+                <article class="job">
+                    <div class="job-header">
+                        <h3 class="job-title">Cybersecurity Intern</h3>
+                        <span class="job-company">@ Enspyre Management Services</span>
+                    </div>
+                    <p class="job-duration">Chicago, Illinois — Onsite</p>
+                    <div class="job-description">
+                        <p>- Gained hands-on experience in cybersecurity practices and security protocols.</p>
+                        <p>- Applied NIST frameworks to align security practices.</p>
+                        <p>- Ensured company compliance with CMMC Level 1 standards.</p>
+                        <p>- Authored a Level 1 safeguards document covering all 15 required practices.</p>
+                        <p>- Installed PoE switches and deployed firewall to meet security standards.</p>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <h3 class="job-title">Software Technical Writer</h3>
+                        <span class="job-company">@ MarketMakerCRE</span>
+                    </div>
+                    <p class="job-duration">Remote</p>
+                    <div class="job-description">
+                        <p>- Created comprehensive technical documentation and user guides for software products.</p>
+                        <p>- Collaborated with engineers and architects to document software systems.</p>
+                        <p>- Supported data analysis tasks to inform technical documentation.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+        <div class="container">
+            <h2 id="skills-title" class="section-title">Skills</h2>
+            <div class="skill-tags" role="list">
+                <span class="tag" role="listitem">Python</span>
+                <span class="tag" role="listitem">JavaScript</span>
+                <span class="tag" role="listitem">HTML</span>
+                <span class="tag" role="listitem">CSS</span>
+                <span class="tag" role="listitem">Git & GitHub</span>
+                <span class="tag" role="listitem">Linux</span>
+                <span class="tag" role="listitem">Network Fundamentals</span>
+                <span class="tag" role="listitem">CMMC L1</span>
+                <span class="tag" role="listitem">AWS (studying)</span>
+            </div>
+
+            <div class="skill-bars">
+                <div class="skill">
+                    <div class="skill-top">
+                        <span>JavaScript</span><span class="lvl">Intermediate</span>
+                    </div>
+                    <div class="bar" aria-label="JavaScript proficiency"><span style="width:70%"></span></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-top">
+                        <span>Python</span><span class="lvl">Intermediate</span>
+                    </div>
+                    <div class="bar" aria-label="Python proficiency"><span style="width:75%"></span></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-top">
+                        <span>Cybersecurity</span><span class="lvl">Foundational</span>
+                    </div>
+                    <div class="bar" aria-label="Cybersecurity proficiency"><span style="width:60%"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <h2 id="projects-title" class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/640x360?text=Project+Screenshot" alt="Screenshot of Portfolio Project" class="project-img" />
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-desc">Responsive, accessible portfolio with resume modal, smooth animations, and GitHub Pages-ready structure.</p>
+                        <div class="project-links">
+                            <a class="btn-link" href="#" aria-disabled="true">Live</a>
+                            <a class="btn-link" href="https://github.com/Nawar03/portfolio" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/640x360?text=Project+Screenshot" alt="Screenshot of Networking Lab" class="project-img" />
+                    <div class="project-content">
+                        <h3 class="project-title">Networking Labs</h3>
+                        <p class="project-desc">Cisco Packet Tracer labs exploring VLANs, DHCP, and WAN topologies with reproducible steps.</p>
+                        <div class="project-links">
+                            <a class="btn-link" href="#" aria-disabled="true">Live</a>
+                            <a class="btn-link" href="#" aria-disabled="true">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/640x360?text=Project+Screenshot" alt="Screenshot of Security Checklist" class="project-img" />
+                    <div class="project-content">
+                        <h3 class="project-title">CMMC L1 Safeguards</h3>
+                        <p class="project-desc">Compiled and tailored CMMC Level 1 safeguards and evidence templates for a small business environment.</p>
+                        <div class="project-links">
+                            <a class="btn-link" href="#" aria-disabled="true">Live</a>
+                            <a class="btn-link" href="#" aria-disabled="true">Docs</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+ <!-- Certifications Section -->
+<section id="certifications" class="certifications" aria-labelledby="cert-title">
+    <div class="container">
+        <h2 id="cert-title" class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="cert-logo" aria-hidden="true">CY</div>
+                <div class="cert-text">
+                    <h3>Cybersecurity Certificate</h3>
+                    <p class="cert-note">
+                        <a href="Udemy certificate.pdf" target="_blank" rel="noopener">
+                            View Certificate (PDF)
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Education Section -->
+    <section class="education" aria-labelledby="edu-title">
+        <div class="container">
+            <h2 id="edu-title" class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="degree">
+                    <h3 class="degree-title">Bachelor of Science, Computer Science</h3>
+                    <p class="school">Saint Xavier University</p>
+                    <p class="location">Chicago, Illinois</p>
+                </div>
+                <div class="degree">
+                    <h3 class="degree-title">Associate in Science, Computer Science</h3>
+                    <p class="school">Moraine Valley Community College</p>
+                    <p class="location">Palos Hills, Illinois</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new opportunities and interesting projects.</p>
+                <div class="socials">
+                    <a class="social" href="mailto:almuohi.nawar@gmail.com" aria-label="Email">Email</a>
+                    <a class="social" href="https://github.com/Nawar03" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                    <a class="social" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+                <a href="mailto:almuohi.nawar@gmail.com" class="contact-button">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="Javascript.js"></script>
+</body>
+</html>
